@@ -1,6 +1,19 @@
-[ipoke~] version .3 for Pd
+[ipoke~] version 0.4.0 for Pd
 
 Original MaxMsp class [ipoke~] by Pierre Alexandre Tremblay. Pd port by Katja Vetter 2012, with assistance from Matt Barber, Julian Brooks, Alexander Harker, Charles Henry and P.A. Tremblay.
+
+Changes for 0.4.0:
+- changed to the pd-lib-builder build system,
+- reorganized the directory structure,
+- fixed  the bool switch issue,
+- added an ipoke~-meta.md file,
+- uploaded code to a github repository.
+
+Fred Jan Kraan, fjkraan@xs4all.nl, 2017-04-10
+
+
+Original .3 README.txt:
+
 
 ********************************************************************************
 
