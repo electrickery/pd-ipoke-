@@ -9,7 +9,10 @@
 #include <stdbool.h>
 #include "m_pd.h"
 
-#define VERSION "version .3 test1"
+#define MAJOR_VERSION  0
+#define MINOR_VERSION  4
+#define BUGFIX_VERSION 0
+
 #define CLIP(a, lo, hi) ( (a)>(lo)?( (a)<(hi)?(a):(hi) ):(lo) )     // as in MaxMsp's ext_common.h
 
 void *ipoke_class;
@@ -559,7 +562,7 @@ void ipoke_dsp(t_ipoke *x, t_signal **sp)
 
 static void ipoke_interp_setting(t_ipoke *x, t_floatarg interp)
 {
-	bool n = (bool)interp;
+	int n = (int)interp;
     
     switch (n)
 	{
@@ -577,7 +580,7 @@ static void ipoke_interp_setting(t_ipoke *x, t_floatarg interp)
 
 static void ipoke_overdub_setting(t_ipoke *x, t_floatarg overdub)
 {
-	bool n = (bool)overdub;
+	int n = (int)overdub;
     
     switch (n)
 	{
@@ -610,5 +613,5 @@ void ipoke_tilde_setup(void)
     class_addmethod(ipoke_class, (t_method)ipoke_overdub_setting, gensym("overdub"), A_FLOAT, 0);
     class_addmethod(ipoke_class, (t_method)ipoke_set, gensym("set"), A_SYMBOL,0);
     class_addbang(ipoke_class, ipoke_bang);
-    post("[ipoke~] %s: Pd port of MaxMsp class by P.A. Tremblay", VERSION);
+    post("[ipoke~] %d.%d.%d: Pd port of MaxMsp class by P.A. Tremblay", MAJOR_VERSION, MINOR_VERSION, BUGFIX_VERSION);
 }
