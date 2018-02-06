@@ -1,3 +1,6 @@
+Changes for 0.4.1:
+- changed Makefile to accept external pd-lib-builder
+
 [ipoke~] version 0.4.0 for Pd
 
 Original MaxMsp class [ipoke~] by Pierre Alexandre Tremblay. Pd port by Katja Vetter 2012, with assistance from Matt Barber, Julian Brooks, Alexander Harker, Charles Henry and P.A. Tremblay.
