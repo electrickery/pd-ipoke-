@@ -6,4 +6,4 @@ The original ipoke object for Max/MSP can be found at http://www.maxobjects.com/
 
 This version is adapted to the Pd-lib-builder build system.
 
-Fred Jan Kraan, 2017-04-10
+Fred Jan Kraan, 2022-12-10
